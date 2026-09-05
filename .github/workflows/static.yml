@@ -1,4 +1,4 @@
-name: Deploy Profile Card
+name: Deploy Projects
 
 on:
   push:
@@ -24,8 +24,14 @@ jobs:
       - name: Prepare website
         run: |
           mkdir _site
+
+          # Personal Profile Page
           cp -r personal_profile_page/* _site/
+
+          # Shared assets
           cp -r assets _site/
+
+          # Compound Interest
           mkdir _site/compound-interest
           cp -r compound-interest/* _site/compound-interest/
 
