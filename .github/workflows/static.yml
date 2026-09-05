@@ -26,6 +26,8 @@ jobs:
           mkdir _site
           cp -r personal_profile_page/* _site/
           cp -r assets _site/
+          mkdir _site/compound-interest
+          cp -r compound-interest/* _site/compound-interest/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
