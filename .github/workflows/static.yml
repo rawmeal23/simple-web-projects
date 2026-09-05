@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir _site
           cp -r personal_profile_page/* _site/
+          cp -r assets _site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
