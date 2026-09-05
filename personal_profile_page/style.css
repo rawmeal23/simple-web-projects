@@ -1,41 +1,118 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: var(--font-3);
+}
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+:root {
+    --font-1: "Schoolbell", cursive;
+    --font-2: "Bebas Neue", sans-serif;
+    --font-3: "Sedgwick Ave Display", cursive;
+
+    --cavs-red: #860038;
+    --cavs-gold: #FDBB30;
+    --cavs-blue: #041E42;
+
+    --border-1: rgb(195, 195, 195) rgb(60, 60, 60) rgb(60, 60, 60) rgb(195, 195, 195);
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(110, 110, 110);
+}
+
+header {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+
+    border: solid 2px;
+    border-color: var(--border-1);
+    border-radius: 10px;
+
+    background-color: #000000;
+    color: #00FF00;
 }
 
 main {
-    padding: 50px;
+    margin: 5px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 5px;
+    flex: 1;
+}
+
+#container-1, #container-2 {
+    border: solid 2px;
+    border-color: var(--border-1);
+    border-radius: 10px;
+}
+
+#container-1 {
+    padding-top: 20px;
+    min-width: 65vh;
+
+    font-family: var(--font-3);
+    background-color: var(--cavs-gold);
+    color: var(--cavs-red);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 13px;
+    gap: 20px;
     flex: 1;
 }
 
-footer {
-    padding: 10px;
+.red-txt {
+    color: var(--cavs-red);
+    font-size: larger;
     text-align: center;
 }
 
-a {
-    color: black;
+.blue-txt {
+    color: var(--cavs-blue);
+    font-size: larger;
+    text-align: center;
+}
+
+img {
+    border: solid 3px var(--cavs-blue);;
+    border-radius: 20px;
+}
+
+#container-2 {
+    background-color: #000000;
+    color: #F5F5F5;
+}
+
+footer {
+    margin-top: auto;
+    padding: 10px;
+    margin: 5px;
+
+    border: solid 2px;
+    border-color: var(--border-1);
+    border-radius: 10px;
+    
+    background-color: var(--cavs-red);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links a {
+    color: white;
+    padding: 10px;
     text-decoration: none;
 }
 
-#profile {
-    border: solid 2px black;
-    border-radius: 50%;
+#links a:hover {
+    background-color: #5c0027;
 }
-
-
